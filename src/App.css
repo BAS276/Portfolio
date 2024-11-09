@@ -1,0 +1,27 @@
+body{
+  background: linear-gradient(#101010, rgb(7, 7, 29));
+  height: 100vh;
+  background-attachment: fixed;
+
+}
+
+/* App.css or index.css */
+@keyframes infinite-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-infinite-scroll {
+  display: flex;
+  animation: infinite-scroll 20s linear infinite;
+  /* Adjust 20s to change scroll speed */
+}
+
+.flex-nowrap {
+  display: flex;
+  white-space: nowrap;
+}

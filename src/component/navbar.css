@@ -1,0 +1,45 @@
+
+.header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header h1{
+    margin-left: 15px;
+    color: white;
+
+    font-size: 40px;
+}
+.header h1 span{
+    margin-left: 15px;
+    color: #00AEFF;
+}
+.navbar{
+    height: 80px;
+    display: flex;
+    align-items:center ;
+
+}
+
+.ul{
+    display: flex;
+    align-items: center
+}
+
+.ul li{
+    color: white;
+    font-size: 20px;
+    list-style-type: none;
+    align-items: center;
+    padding-right: 20px;
+}
+.ul li:hover{
+    color: #00AEFF;
+
+}
+.link {
+    text-decoration: none;
+    color: inherit; 
+}

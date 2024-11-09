@@ -1,0 +1,116 @@
+.Main {
+    display: block;
+    margin: 20px;
+    padding: 20px;
+    color: aliceblue;
+}
+
+.Main h1 {
+    font-size: 70px;
+    font-family: Monospace Monaco;
+
+}
+
+.Main h3 {
+    font-size: 45px;
+    margin-top: -50px;
+    color: #00AEFF;
+    font-family: Monospace Monaco;
+}
+
+.Main p {
+    font-size: 25px;
+    margin-top: -20px;
+    margin-left: 10px;
+}
+
+.card {
+    position: fixed;
+    top: 400px;
+    margin-top:140px ;
+    left: 40px;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 25px;
+    gap: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+}
+
+.socialContainer {
+    width: 52px;
+    height: 52px;
+    background-color: #00AEFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: 0.3s;
+    border-radius: 50%;
+}
+
+/* instagram*/
+.containerOne:hover {
+    background-color: #d62976;
+    transition-duration: 0.3s;
+    transform: scale(1.5);
+    border-radius: 15px;
+}
+
+.containerTwo:hover {
+    background-color: #00acee;
+    transition-duration: 0.3s;
+    transform: scale(1.5);
+    border-radius: 15px;
+}
+
+/* linkdin*/
+.containerThree:hover {
+    background-color: #00476e;
+    transition-duration: 0.3s;
+    transform: scale(1.5);
+    border-radius: 15px;
+}
+
+.containerFour:hover {
+    background-color: #25d366;
+    transition-duration: 0.3s;
+    transform: scale(1.5);
+    border-radius: 15px;
+}
+.containerFive:hover {
+    background-color: #0b173f;
+    transition-duration: 0.3s;
+    transform: scale(1.5);
+    border-radius: 15px;
+}
+.socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: 0.3s;
+}
+
+.socialSvg {
+    width: 17px;
+}
+
+.socialSvg path {
+    fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

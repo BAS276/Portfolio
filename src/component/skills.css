@@ -1,0 +1,82 @@
+/* src/Skills.css */
+
+.skills-container {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skills-title {
+    font-size: 2rem;
+    color: #00AEFF;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.skills-sections {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+/* Adding animations to skills-category */
+.skills-category {
+    width: 200px;
+    border: solid 1px #00AEFF;
+    background-color: rgba(236, 236, 236, 0.1);
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    opacity: 0; /* Start invisible */
+    transform: translateY(20px); /* Initial position */
+    animation: fadeInUp 0.5s forwards; /* Animation applied */
+}
+
+.skills-category h3 {
+    font-size: 1.8rem;
+    color: #00AEFF;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #00AEFF;
+    padding-bottom: 5px;
+}
+
+.skills-category ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-category li {
+    font-size: 1.1rem;
+    color: #f4f4f4;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+}
+.skills-category li img{
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+@keyframes fadeInUp {
+    to {
+        opacity: 1; /* End visible */
+        transform: translateY(0); /* Final position */
+    }
+}
+
+@media (max-width: 768px) {
+    .skills-sections {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-category {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
