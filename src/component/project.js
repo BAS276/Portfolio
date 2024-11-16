@@ -11,13 +11,6 @@ const Projects = () => {
             image: Muslimimg,
             technologies: ['HTML', 'CSS', 'JavaScript','API'],
             link: 'https://bas276.github.io/Mu-Slim/',
-        },
-        {
-            title: 'Project 2',
-            description: 'A brief description of Project 2.',
-            image: 'path/to/project2-image.jpg',
-            technologies: ['Node.js', 'Express', 'MongoDB'],
-            link: '',
         }
     ];
 
