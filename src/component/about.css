@@ -34,8 +34,7 @@
 }
 
 .divbutton {
-    position: fixed;
-    bottom:  70px;
+
 }
 .button {
     --width: 120px;
@@ -149,16 +148,37 @@
     bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1096px) {
     .container {
         flex-direction: column;
         align-items: center;
     }
-    .container-img, .container-text {
-        width: 100%;
-        margin: 0;
+    .container-img{
+        margin-left: 0px;
+        width: 50%;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+    }
+    .container-img img {
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
     }
     .container-text {
         margin-right: 0;
+        width: 80%;
+        margin: 0;
+    }
+    .container-text h1 {
+        font-size: 30px;
+        margin-top: -10px;
+        color: #00AEFF;
+        font-family: Monospace Monaco;
+    }
+    
+    .container-text h4 {
+        color: rgb(188, 188, 190);
+        font-size: 15px;
     }
 }

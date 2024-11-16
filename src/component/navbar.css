@@ -5,24 +5,17 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    justify-items: center;
+    background-color: black;
 }
 .header h1{
-    margin-left: 15px;
     color: white;
-
     font-size: 40px;
 }
 .header h1 span{
     margin-left: 15px;
     color: #00AEFF;
 }
-.navbar{
-    height: 80px;
-    display: flex;
-    align-items:center ;
-
-}
-
 .ul{
     display: flex;
     align-items: center
@@ -34,6 +27,7 @@
     list-style-type: none;
     align-items: center;
     padding-right: 20px;
+    
 }
 .ul li:hover{
     color: #00AEFF;
@@ -42,4 +36,48 @@
 .link {
     text-decoration: none;
     color: inherit; 
+}
+.menu-icon {
+    display: none;
+}
+
+@media (max-width:750px) {
+    .header{
+        height: 60px;
+    }
+    .header h1{
+        font-size: 30px;
+    }
+    .header ul {
+        border-top:solid 1px #00AEFF;
+        background-color: #000000ee;
+        position: absolute;
+        top: 44px;
+        right: 0;
+        display: block;
+        text-align: center;
+        gap: 0;
+        max-height: 0px;
+        overflow: hidden;
+        width: 100%;
+    }
+    .header ul li {
+        border-bottom:solid 1px #00AEFF;
+        width: 100%;
+        margin-left: 0px;
+        padding-bottom: 15px;
+        margin-top: 15px;
+        font-size: 20px;
+    }
+    .menu-icon {
+        display: block;
+
+    }
+    .menu-icon img{
+        margin-top: 10px;
+        width: 34px;
+    }
+    #menuList {
+        transition: all 0.5s;
+    }
 }

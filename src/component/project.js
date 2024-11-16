@@ -8,24 +8,17 @@ const Projects = () => {
         {
             title: 'Muslim',
             description: 'Quran recitation and reading site',
-            image: Muslimimg, // Replace with your project image path
+            image: Muslimimg,
             technologies: ['HTML', 'CSS', 'JavaScript','API'],
-            link: 'https://github.com/username/project1', // Replace with your project link
+            link: 'https://bas276.github.io/Mu-Slim/',
         },
         {
             title: 'Project 2',
             description: 'A brief description of Project 2.',
-            image: 'path/to/project2-image.jpg', // Replace with your project image path
+            image: 'path/to/project2-image.jpg',
             technologies: ['Node.js', 'Express', 'MongoDB'],
-            link: 'https://github.com/username/project2', // Replace with your project link
-        },
-        {
-            title: 'Project 2',
-            description: 'A brief description of Project 2.',
-            image: 'path/to/project2-image.jpg', // Replace with your project image path
-            technologies: ['Node.js', 'Express', 'MongoDB'],
-            link: 'https://github.com/username/project2', // Replace with your project link
-        },
+            link: '',
+        }
     ];
 
     return (
