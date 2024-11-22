@@ -26,9 +26,8 @@
 }
 
 .card {
-    position: fixed;
-    top: 400px;
-    margin-top:140px ;
+
+    margin-top:60px ;
     left: 40px;
     width: fit-content;
     height: fit-content;
