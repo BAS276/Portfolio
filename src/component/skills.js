@@ -45,6 +45,7 @@ const Skills = () => {
             { src: Figma, name: "Figma" },
             { src: Photoshop, name: "Photoshop" },
             { src: Adobe, name: "Adobe XD" },
+            
         ],
         Backend: [
             { src: SQL, name: "SQL" },

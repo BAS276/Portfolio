@@ -2,7 +2,7 @@
 import React from 'react';
 import './project.css'; // Import CSS file
 
-const ProjectCard = ({ title, description, image, technologies, link }) => {
+const ProjectCard = ({ title, description, image, technologies, link, githublink }) => {
     return (
         <div className="project-card">
             <img className="project-image" src={image} alt={title} />
@@ -21,7 +21,14 @@ const ProjectCard = ({ title, description, image, technologies, link }) => {
                 <a href={link} target="_blank" rel="noopener noreferrer" className="project-link">
                     View Project
                 </a>
+                <a href={githublink} target="_blank" rel="noopener noreferrer" className="project-link">
+                    Githab
+                </a>
             </div>
+            <div className="project-link-container">
+
+            </div>
+
         </div>
     );
 };
